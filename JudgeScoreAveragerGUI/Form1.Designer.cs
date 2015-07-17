@@ -32,6 +32,7 @@
             this.judgesNum = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.setupBtn = new System.Windows.Forms.Button();
+            this.topscoreText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -40,12 +41,10 @@
             this.resetLink = new System.Windows.Forms.LinkLabel();
             this.aboutLink = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.topscoreText = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.judgesNum)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topscoreText)).BeginInit();
             this.SuspendLayout();
             // 
             // judgesNum
@@ -53,6 +52,11 @@
             this.judgesNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.judgesNum.Location = new System.Drawing.Point(104, 34);
             this.judgesNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.judgesNum.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.judgesNum.Minimum = new decimal(new int[] {
             1,
             0,
@@ -70,8 +74,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.topscoreText);
             this.groupBox1.Controls.Add(this.setupBtn);
+            this.groupBox1.Controls.Add(this.topscoreText);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.judgesNum);
@@ -94,6 +98,17 @@
             this.setupBtn.Text = "Set";
             this.setupBtn.UseVisualStyleBackColor = true;
             this.setupBtn.Click += new System.EventHandler(this.setupBtn_Click);
+            // 
+            // topscoreText
+            // 
+            this.topscoreText.Location = new System.Drawing.Point(104, 62);
+            this.topscoreText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topscoreText.MaxLength = 3;
+            this.topscoreText.Name = "topscoreText";
+            this.topscoreText.Size = new System.Drawing.Size(76, 22);
+            this.topscoreText.TabIndex = 3;
+            this.topscoreText.Text = "0";
+            this.topscoreText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -183,19 +198,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // topscoreText
-            // 
-            this.topscoreText.Location = new System.Drawing.Point(105, 63);
-            this.topscoreText.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.topscoreText.Name = "topscoreText";
-            this.topscoreText.Size = new System.Drawing.Size(76, 22);
-            this.topscoreText.TabIndex = 5;
-            this.topscoreText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -218,7 +220,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topscoreText)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,13 +232,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox topscoreText;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox outputText;
         private System.Windows.Forms.Button setupBtn;
         private System.Windows.Forms.LinkLabel resetLink;
         private System.Windows.Forms.LinkLabel saveLink;
         private System.Windows.Forms.LinkLabel aboutLink;
-        private System.Windows.Forms.NumericUpDown topscoreText;
     }
 }
 

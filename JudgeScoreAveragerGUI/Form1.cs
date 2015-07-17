@@ -35,21 +35,14 @@ namespace JudgeScoreAveragerGUI
             
             string judgestxt = judgesNum.Text;
             string topscoretxt = topscoreText.Text;
+            
 
-            try
-            {
-                judges = Convert.ToInt32(judgestxt);
-                topscore = Convert.ToSingle(topscoretxt);
-            }
-            catch
-            {
-                MessageBox.Show("You must enter a number!", "Judge Score Averager", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            judges = Convert.ToInt32(judgestxt);
+            topscore = Convert.ToSingle(topscoretxt);
+
             if (topscore <= 0)
             {
                 MessageBox.Show("You can't have a top score of " + topscore + "!", "Judge Score Averager", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
             }
             else
             {
@@ -67,13 +60,9 @@ namespace JudgeScoreAveragerGUI
                     {
                         if (ia.Result > topscore)
                         {
-                            outputText.AppendText("\nYou can't have a score higher than " + topscore);
+                            scoreList.Add(topscore);
+                            outputText.AppendText("You can't have a score higher than " + topscore);
                             outputText.ScrollToCaret();
-                            i--;
-                        }
-                        else if (ia.Result == null||ia.Result == 0)
-                        {
-                            i--;
                         }
                         else
                         {
@@ -108,7 +97,6 @@ namespace JudgeScoreAveragerGUI
             outputText.Clear();
             judges = default(int);
             topscore = default(int);
-            scoreList.Clear();
             outputText.AppendText("Welcome to the score average calculator.");
         }
 
