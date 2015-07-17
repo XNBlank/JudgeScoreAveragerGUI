@@ -60,9 +60,13 @@ namespace JudgeScoreAveragerGUI
                     {
                         if (ia.Result > topscore)
                         {
-                            scoreList.Add(topscore);
                             outputText.AppendText("You can't have a score higher than " + topscore);
                             outputText.ScrollToCaret();
+                            i--;
+                        }
+                        else if (ia.Result == null || ia.Result <= 0)
+                        {
+                            i--;
                         }
                         else
                         {
@@ -97,6 +101,7 @@ namespace JudgeScoreAveragerGUI
             outputText.Clear();
             judges = default(int);
             topscore = default(int);
+            scoreList.Clear();
             outputText.AppendText("Welcome to the score average calculator.");
         }
 
