@@ -1,0 +1,11 @@
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\bin\Debug\JudgeScoreAveragerGUI.exe.config
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\bin\Debug\JudgeScoreAveragerGUI.exe
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\bin\Debug\JudgeScoreAveragerGUI.pdb
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.csprojResolveAssemblyReference.cache
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.About.resources
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.Form1.resources
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.InputAcceptor.resources
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.Properties.Resources.resources
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.csproj.GenerateResource.Cache
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.exe
+C:\Users\Blank\Documents\GitHub\JudgeScoreAveragerGUI\JudgeScoreAveragerGUI\obj\Debug\JudgeScoreAveragerGUI.pdb
